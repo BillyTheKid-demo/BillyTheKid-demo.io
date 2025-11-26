@@ -211,6 +211,10 @@ main {
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
 }
 
+.testimonials-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
 /* Card style */
 .card {
   background: #ffffff;
@@ -219,6 +223,7 @@ main {
   box-shadow: 0 12px 20px rgba(15, 23, 42, 0.08);
 }
 
+/* Services / pricing text */
 .service-card h3,
 .pricing-card h3 {
   margin-top: 0;
@@ -239,6 +244,12 @@ main {
   font-size: 0.95rem;
 }
 
+/* Pricing icons */
+.pricing-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
 .price {
   font-size: 1.2rem;
   font-weight: 700;
@@ -253,6 +264,30 @@ main {
 
 .feature p {
   color: #475569;
+}
+
+/* ========= GALLERY ========= */
+
+.gallery-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 0.9rem;
+  box-shadow: 0 12px 20px rgba(15, 23, 42, 0.1);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
 }
 
 /* ========= LISTS / TEXT ========= */
@@ -310,6 +345,35 @@ main {
   outline: 2px solid #2563eb;
   outline-offset: 1px;
   border-color: #2563eb;
+}
+
+/* ========= TESTIMONIALS ========= */
+
+.testimonial-card {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-name {
+  font-weight: 600;
+}
+
+.testimonial-meta {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.stars {
+  color: #f59e0b;
+  font-size: 0.95rem;
 }
 
 /* ========= FOOTER ========= */
