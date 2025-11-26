@@ -1,12 +1,266 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Website</title>
+  <title>FreshWave Laundry | Local Laundromat & Dry Cleaning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Full-service laundromat and dry cleaner offering self-service machines, wash & fold, and dry cleaning with same-day options."
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This site is hosted for free using GitHub Pages.</p>
+  <!-- Top bar / logo / navigation -->
+  <header class="top-bar">
+    <div class="logo">
+      <!-- You can change this name to match the real business -->
+      FreshWave Laundry
+    </div>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#hours">Hours & Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Clean Clothes, Less Hassle.</h1>
+        <p>
+          Modern washers and dryers, fast turnaround, and friendly service.
+          Stop worrying about laundry day — we’ve got it covered.
+        </p>
+        <div class="hero-actions">
+          <!-- You can change the phone number when you sell it -->
+          <a href="tel:555-123-4567" class="btn primary">Call Now</a>
+          <a href="#services" class="btn ghost">View Services</a>
+        </div>
+        <p class="hero-note">
+          <strong>Same-day service</strong> available on most wash & fold and dry cleaning orders.
+        </p>
+      </div>
+      <div class="hero-card">
+        <h2>Today’s Hours</h2>
+        <!-- These are sample hours, can be edited easily -->
+        <p><strong>Monday – Friday:</strong> 7:00 AM – 9:00 PM</p>
+        <p><strong>Saturday:</strong> 8:00 AM – 8:00 PM</p>
+        <p><strong>Sunday:</strong> 9:00 AM – 7:00 PM</p>
+        <p class="hero-card-location">
+          123 Main Street, Your Town, ST
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <p class="section-intro">
+        Whether you prefer to do it yourself or drop it off, we have an option that fits your schedule.
+      </p>
+      <div class="grid services-grid">
+        <article class="card service-card">
+          <h3>Self-Service Laundry</h3>
+          <p>
+            Clean, well-maintained washers and dryers in multiple sizes. 
+            Coin and card payments accepted.
+          </p>
+          <ul>
+            <li>Standard & large-capacity machines</li>
+            <li>Fast wash & dry cycles</li>
+            <li>Detergent & supplies available on-site</li>
+          </ul>
+        </article>
+
+        <article class="card service-card">
+          <h3>Wash & Fold</h3>
+          <p>
+            Drop off your laundry and we’ll wash, dry, and neatly fold it for you.
+          </p>
+          <ul>
+            <li>Priced by the pound</li>
+            <li>Same-day options available</li>
+            <li>Fresh, clean, neatly folded</li>
+          </ul>
+        </article>
+
+        <article class="card service-card">
+          <h3>Dry Cleaning</h3>
+          <p>
+            Professional cleaning for shirts, suits, dresses, and delicate fabrics.
+          </p>
+          <ul>
+            <li>Stain treatment</li>
+            <li>Pressed and ready-to-wear</li>
+            <li>Business & formal wear</li>
+          </ul>
+        </article>
+
+        <article class="card service-card">
+          <h3>Commercial Laundry</h3>
+          <p>
+            Reliable laundry solutions for local businesses: Airbnb hosts, salons, gyms, and more.
+          </p>
+          <ul>
+            <li>Flexible pickup schedules</li>
+            <li>Volume pricing</li>
+            <li>Consistent, professional results</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="section section-alt">
+      <h2>Why Choose Us</h2>
+      <div class="grid features-grid">
+        <div class="feature">
+          <h3>Fast Turnaround</h3>
+          <p>
+            Same-day service available on many orders so you’re never waiting long for clean clothes.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Modern Equipment</h3>
+          <p>
+            High-efficiency machines that are regularly serviced to give you the best clean.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Friendly Staff</h3>
+          <p>
+            Our team is here to help with stains, machine questions, and anything else you need.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Convenient Location</h3>
+          <p>
+            Easy to find with plenty of parking — make laundry day quick and simple.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="section">
+      <h2>Sample Pricing</h2>
+      <p class="section-intro">
+        Pricing can be customized to match the actual laundromat. These are example prices you can adjust easily.
+      </p>
+      <div class="grid pricing-grid">
+        <div class="card pricing-card">
+          <h3>Self-Service</h3>
+          <p class="price">From $3.00 / wash</p>
+          <ul>
+            <li>Standard washer: $3.00</li>
+            <li>Large washer: $4.50</li>
+            <li>Dryer: $0.25 per 6 minutes</li>
+          </ul>
+        </div>
+        <div class="card pricing-card">
+          <h3>Wash & Fold</h3>
+          <p class="price">$1.50 / lb</p>
+          <ul>
+            <li>10 lb minimum</li>
+            <li>Same-day: +$5.00</li>
+            <li>Neatly folded & bagged</li>
+          </ul>
+        </div>
+        <div class="card pricing-card">
+          <h3>Dry Cleaning</h3>
+          <p class="price">From $4.00 / item</p>
+          <ul>
+            <li>Dress shirts: $4.00</li>
+            <li>Pants: $6.50</li>
+            <li>2-piece suit: $13.00</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pricing-note">
+        <em>Final prices and services can be adjusted to match your business needs.</em>
+      </p>
+    </section>
+
+    <!-- HOURS & LOCATION SECTION -->
+    <section id="hours" class="section section-alt">
+      <h2>Hours & Location</h2>
+      <div class="grid info-grid">
+        <div>
+          <h3>Hours</h3>
+          <ul class="plain-list">
+            <li><strong>Mon – Fri:</strong> 7:00 AM – 9:00 PM</li>
+            <li><strong>Saturday:</strong> 8:00 AM – 8:00 PM</li>
+            <li><strong>Sunday:</strong> 9:00 AM – 7:00 PM</li>
+          </ul>
+          <p class="small-text">
+            Last wash recommended at least 1 hour before closing.
+          </p>
+        </div>
+        <div>
+          <h3>Location</h3>
+          <p>
+            123 Main Street<br />
+            Your Town, ST 12345
+          </p>
+          <p class="small-text">
+            You can replace this with the real laundromat address and even embed a Google Map later.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="grid contact-grid">
+        <div>
+          <p>
+            Have questions about pricing, services, or commercial laundry?
+            Reach out and we’ll be happy to help.
+          </p>
+          <ul class="plain-list">
+            <li><strong>Phone:</strong> (555) 123-4567</li>
+            <li><strong>Email:</strong> info@freshwavelaundry.com</li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <!-- NOTE: This form doesn’t actually send anywhere yet. 
+               A real business could hook it up to email or a form service. -->
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="How can we help?"></textarea>
+          </label>
+          <button type="submit" class="btn primary">
+            Send Message (Demo)
+          </button>
+          <p class="small-text">
+            This is a sample form. When you sell this site, they can connect it to their preferred contact method.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      © <span id="year"></span> FreshWave Laundry. All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    // Set the year automatically in the footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
